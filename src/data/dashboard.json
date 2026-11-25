@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "tab": "CSPM",
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "text": "4 cloud accounts in total, 2 connected and 2 not connected.",
+          "chart": {
+            "type": "donut",
+            "label": "Total",
+            "items": [
+              {
+                "label": "Connected (2)",
+                "value": 2,
+                "color": "#4f6ef7"
+              },
+              {
+                "label": "Not Connected (2)",
+                "value": 2,
+                "color": "#e3e9fc"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cloud-risk",
+          "name": "Cloud Account Risk Assessment",
+          "text": "Risk assessment across all connected cloud accounts.",
+          "chart": {
+            "type": "donut",
+            "label": "Total",
+            "items": [
+              {
+                "label": "Failed (1689)",
+                "value": 1689,
+                "color": "#c81e1e"
+              },
+              {
+                "label": "Warning (681)",
+                "value": 681,
+                "color": "#f5c518"
+              },
+              {
+                "label": "Not available (36)",
+                "value": 36,
+                "color": "#c9ced6"
+              },
+              {
+                "label": "Passed (7253)",
+                "value": 7253,
+                "color": "#16a34a"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard:",
+      "tab": "CWPP",
+      "widgets": [
+        {
+          "id": "namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "text": "Random text: namespace alert data would be shown here.",
+          "chart": {
+            "type": "empty"
+          }
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "text": "Random text: workload alert data would be shown here.",
+          "chart": {
+            "type": "empty"
+          }
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan",
+      "tab": "Image",
+      "widgets": [
+        {
+          "id": "image-risk",
+          "name": "Image Risk Assessment",
+          "text": "Vulnerabilities found in scanned images.",
+          "chart": {
+            "type": "bar",
+            "label": "Total Vulnerabilities",
+            "items": [
+              {
+                "label": "Critical (9)",
+                "value": 9,
+                "color": "#7f1d1d"
+              },
+              {
+                "label": "High (150)",
+                "value": 150,
+                "color": "#dc2626"
+              },
+              {
+                "label": "Medium (550)",
+                "value": 550,
+                "color": "#f59e0b"
+              },
+              {
+                "label": "Low (761)",
+                "value": 761,
+                "color": "#facc15"
+              }
+            ]
+          }
+        },
+        {
+          "id": "image-issues",
+          "name": "Image Security Issues",
+          "text": "Security issues found in scanned images.",
+          "chart": {
+            "type": "bar",
+            "label": "Total Images",
+            "items": [
+              {
+                "label": "Critical (2)",
+                "value": 2,
+                "color": "#7f1d1d"
+              },
+              {
+                "label": "High (2)",
+                "value": 2,
+                "color": "#dc2626"
+              },
+              {
+                "label": "Medium (1)",
+                "value": 1,
+                "color": "#f59e0b"
+              },
+              {
+                "label": "Low (1)",
+                "value": 1,
+                "color": "#facc15"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Ticket Overview",
+      "tab": "Ticket",
+      "widgets": [
+        {
+          "id": "open-tickets",
+          "name": "Open Tickets",
+          "text": "Random text: 14 tickets are open this week.",
+          "chart": {
+            "type": "text"
+          }
+        },
+        {
+          "id": "resolved-tickets",
+          "name": "Resolved Tickets",
+          "text": "Random text: 31 tickets were resolved this week.",
+          "chart": {
+            "type": "text"
+          }
+        }
+      ]
+    }
+  ]
+}
