@@ -1,0 +1,41 @@
+* { box-sizing: border-box }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f0f5fa; color: #14213d }
+.page { padding: 0 24px 40px; max-width: 1400px; margin: 0 auto }
+.topbar { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; padding: 10px 0; font-size: 13px; color: #555 }
+.search { padding: 8px 12px; border: 1px solid #c7d2e6; border-radius: 6px; background: #fff; width: 100% }
+.head { display: flex; justify-content: space-between; align-items: center; margin: 16px 0 }
+h1 { font-size: 20px; margin: 0 }
+h2 { font-size: 16px; margin: 24px 0 8px }
+h3 { font-size: 14px; margin: 0 0 12px }
+.actions { display: flex; gap: 10px }
+.btn { padding: 8px 14px; border: 1px solid #c7d2e6; border-radius: 6px; background: #fff; cursor: pointer; font-size: 13px }
+.btn.primary { background: #0f1b3d; color: #fff; border-color: #0f1b3d }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px }
+.card { position: relative; background: #fff; border-radius: 12px; padding: 16px; min-height: 200px; border: 1px solid #e3e8f0 }
+.card.add { display: flex; align-items: center; justify-content: center; background: #fafbfd }
+.remove { position: absolute; top: 8px; right: 10px; border: 0; background: none; font-size: 20px; cursor: pointer; color: #888 }
+.remove:hover { color: #c81e1e }
+.chart-row { display: flex; align-items: center; gap: 24px }
+.legend { list-style: none; padding: 0; margin: 8px 0 0; font-size: 12px; display: grid; gap: 8px }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px }
+.bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin: 8px 0 }
+.bar span { display: block }
+.bar-total { margin: 0; font-size: 12px }
+.bar-total b { font-size: 18px }
+.empty { text-align: center; color: #666; font-size: 13px; padding-top: 20px }
+.text { font-size: 13px; color: #444 }
+.muted { color: #666; font-size: 13px }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; justify-content: flex-end; z-index: 10 }
+.panel { width: 480px; max-width: 100%; background: #fff; display: flex; flex-direction: column }
+.panel header { background: #1a237e; color: #fff; padding: 14px 18px; display: flex; justify-content: space-between; font-weight: 600 }
+.panel .x { background: none; border: 0; color: #fff; font-size: 22px; cursor: pointer }
+.panel-body { padding: 16px 18px; overflow: auto; flex: 1 }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid #e3e8f0; margin-bottom: 12px }
+.tab { background: none; border: 0; padding: 8px 12px; cursor: pointer; font-size: 13px; color: #555 }
+.tab.active { color: #14213d; font-weight: 600; border-bottom: 2px solid #14213d }
+.field { width: 100%; padding: 8px 10px; border: 1px solid #c7d2e6; border-radius: 6px; margin-bottom: 8px; font: inherit; font-size: 13px }
+.check { display: flex; gap: 10px; align-items: center; border: 1px solid #e3e8f0; border-radius: 4px; padding: 10px 12px; margin-bottom: 8px; font-size: 13px }
+.new { margin-top: 16px } .new h4 { margin: 0 0 8px; font-size: 13px }
+.panel footer { padding: 14px 18px; display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid #e3e8f0 }
+@media (max-width: 900px) { .topbar { grid-template-columns: 1fr; gap: 8px } .head { flex-wrap: wrap; gap: 8px } .grid { grid-template-columns: 1fr } .chart-row { flex-direction: column; align-items: flex-start } }
